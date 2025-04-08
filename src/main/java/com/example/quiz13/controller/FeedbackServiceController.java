@@ -29,5 +29,9 @@ public class FeedbackServiceController {
 		return feedbackService.fillin(req);
 	}
 	
+	@PostMapping(value = "feedback/statistics")
+	public StatisticsRes statistics(@RequestParam(value = "quizId") int quizId) {
+		return feedbackService.statistics(quizId);
+	}
 	
 }
