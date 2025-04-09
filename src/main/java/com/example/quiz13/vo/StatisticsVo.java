@@ -13,9 +13,20 @@ public class StatisticsVo {
 	private boolean must;
 
 	private List<OptionCountVo> optionCountVoList;
+	
+	private String textAnswer;
 
 	public StatisticsVo() {
 		super();
+	}
+
+	public StatisticsVo(int quesId, String quesName, String quesType, boolean must, String textAnswer) {
+		super();
+		this.quesId = quesId;
+		this.quesName = quesName;
+		this.quesType = quesType;
+		this.must = must;
+		this.textAnswer = textAnswer;
 	}
 
 	public StatisticsVo(int quesId, String quesName, String quesType, boolean must,
@@ -58,6 +69,14 @@ public class StatisticsVo {
 
 	public void setOptionCountVoList(List<OptionCountVo> optionCountVoList) {
 		this.optionCountVoList = optionCountVoList;
+	}
+
+	public void setTextAnswer(String textAnswer) {
+		this.textAnswer = textAnswer;
+	}
+	
+	public String getTextAnswer() {
+		return textAnswer;
 	}
 
 }

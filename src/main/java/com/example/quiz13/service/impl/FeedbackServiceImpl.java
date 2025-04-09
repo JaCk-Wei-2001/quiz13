@@ -231,43 +231,63 @@ public class FeedbackServiceImpl implements FeedbackService {
 		// 從 question 找選項，不直接從答案找主要是要預防可能會有某個選項都沒人選
 		List<Question> questionList = questionDao.getByQuizId(quizId);
 		List<StatisticsVo> statisticsVoList = new ArrayList<>();
-		// Map<問題編號, 多個選項>>
+
+		// Map<問題編號, 多個選項>
 		Map<Integer, List<String>> quesIdOptionsMap = new HashMap<>();
+
 		for (Question item : questionList) {
 			// 將 DB 中的 question 相關資訊設定到 StatisticsVo 中，先排除統計
 			StatisticsVo vo = new StatisticsVo(item.getQuesId(), item.getQuesName(), //
 					item.getQuesType(), item.isMust());
 			statisticsVoList.add(vo);
-			// 把每一個非Text的選項
+
+			// 如果是非 TEXT 題型（選擇題），解析選項字串為 List
 			if (!item.getQuesType().equalsIgnoreCase(QuesType.TEXT.getType())) {
-				// 將List<String>轉換成List
 				try {
-					List<String> optionList = mapper.readValue(item.getOptions(), new TypeReference<>() {
-					});
+					List<String> optionList = mapper.readValue(item.getOptions(), new TypeReference<>() {});
 					quesIdOptionsMap.put(item.getQuesId(), optionList);
 				} catch (Exception e) {
 					return new StatisticsRes(ResMessage.OPTIONS_PARSE_ERROR.getCode(), //
 							ResMessage.OPTIONS_PARSE_ERROR.getMessage());
 				}
 			} else {
+				// TEXT 題型設定為 null（不需要選項統計）
 				quesIdOptionsMap.put(item.getQuesId(), null);
 			}
-
 		}
+
+		// 撈出所有回答資料
 		Map<Integer, List<String>> quesIdAnswersMap = getAnswers(quizId);
 		if (quesIdAnswersMap == null) {
 			return new StatisticsRes(ResMessage.ANSWER_PARSE_ERROR.getCode(), //
 					ResMessage.ANSWER_PARSE_ERROR.getMessage());
 		}
-		// 計算選項的回答次數
+
+		// 統計各選項被選的次數
 		Map<Integer, List<OptionCountVo>> map = computeAnswerCount(quesIdOptionsMap, quesIdAnswersMap);
+
 		for (StatisticsVo vo : statisticsVoList) {
 			int quesId = vo.getQuesId();
+
+			// 設定選項統計結果（僅針對選擇題）
 			vo.setOptionCountVoList(map.get(quesId));
+
+			// 如果是簡答題，整合所有答案為單一字串
+			if (QuesType.TEXT.getType().equalsIgnoreCase(vo.getQuesType())) {
+				List<String> answers = quesIdAnswersMap.get(quesId);
+				if (answers != null && !answers.isEmpty()) {
+					String allAnswers = String.join("\n", answers); // 換行分隔
+					vo.setTextAnswer(allAnswers);
+				} else {
+					vo.setTextAnswer(""); // 沒有答案也給空字串
+				}
+			}
 		}
+
 		return new StatisticsRes(ResMessage.SUCCESS.getCode(), //
 				ResMessage.SUCCESS.getMessage(), statisticsVoList);
 	}
+
 
 	private Map<Integer, List<OptionCountVo>> computeAnswerCount(Map<Integer, List<String>> quesIdOptionsMap, //
 			Map<Integer, List<String>> quesIdAnswersMap) {

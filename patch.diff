@@ -1,0 +1,69 @@
+From fd6c588a7ddacf6040032a7d39209e899a4dd995 Mon Sep 17 00:00:00 2001
+From: Jack-wei-20010907 <jspss97030@gmail.com>
+Date: Tue, 8 Apr 2025 11:30:49 +0800
+Subject: [PATCH] set DB
+
+---
+ src/main/resources/application.properties | 24 +++++++++++++++++------
+ src/main/resources/data-mysql.sql         |  0
+ src/main/resources/schema-mysql.sql       |  9 +++++++++
+ 3 files changed, 27 insertions(+), 6 deletions(-)
+ create mode 100644 src/main/resources/data-mysql.sql
+ create mode 100644 src/main/resources/schema-mysql.sql
+
+diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties
+index 422566e..65ae7fc 100644
+--- a/src/main/resources/application.properties
++++ b/src/main/resources/application.properties
+@@ -1,11 +1,23 @@
+ spring.application.name=quiz13
+-#\u7CFB\u7D71\u7684\u9810\u8A2D port \u662F 8080\uFF0C\u900F\u904E\u4E0B\u4E00\u884C\u7684\u8A2D\u5B9A\u53EF\u4EE5\u6539\u6210 8083
+-#server.port=8083
+-# \u8A2D\u5B9A\u8CC7\u6599\u5EAB\u9023\u63A5
+-# 3306\u662F\u9023\u63A5 mysql \u7684 port\uFF1Bp12 \u662F\u8981\u9023\u63A5\u7684\u8CC7\u6599\u5EAB\u540D\u7A31
+-# rewriteBatchedStatements=true: \u53EF\u4EE5\u6279\u6B21\u65B0\u589E
++
++# 設定資料庫連接
++# 3306是連接 mysql 的 port；quiz13 是要連接的資料庫名稱
++# rewriteBatchedStatements=true: 可以批次新增
++
+ spring.datasource.url=jdbc:mysql://localhost:3306/quiz13?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true
+ spring.datasource.username=root
+ spring.datasource.password=root
+ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+-spring.jpa.show-sql=true
+\ No newline at end of file
++spring.jpa.show-sql=true
++
++#sql schema 檔案來源
++#spring.sql.init.schema-locations=classpath:schema-mysql.sql
++
++#[always][embedded][never]
++#spring.sql.init.mode=always
++#sql 測試資料來源
++#spring.sql.init.data-locations=classpath:data-mysql.sql
++
++#會自動產生 table，但 schema 和 entity 要先建立
++#spring.jpa.generate-ddl=false
++
+diff --git a/src/main/resources/data-mysql.sql b/src/main/resources/data-mysql.sql
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/main/resources/schema-mysql.sql b/src/main/resources/schema-mysql.sql
+new file mode 100644
+index 0000000..b82a50e
+--- /dev/null
++++ b/src/main/resources/schema-mysql.sql
+@@ -0,0 +1,9 @@
++CREATE TABLE if not exists `quiz` (
++  `quiz_id` int NOT NULL AUTO_INCREMENT,
++  `quiz_name` varchar(60) NOT NULL,
++  `description` varchar(200) NOT NULL,
++  `start_date` date DEFAULT NULL,
++  `end_date` date DEFAULT NULL,
++  `is_published` tinyint DEFAULT '1',
++  PRIMARY KEY (`quiz_id`)
++) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- 
+2.46.0.windows.1
+

@@ -23,7 +23,7 @@ public interface FeedbackDao extends JpaRepository<Feedback, FeedbackId> {
 	@Transactional
 	@Query(value = "insert into feedback "
 			+ "(user_name, user_email, user_phone, user_age, quiz_id, ques_id, answer, fillin_date) "
-			+ " values (:userName, :userEmail, :userPhone, :userAge, :quizId, :answer, now())" + "", nativeQuery = true)
+			+ " values (:userName, :userEmail, :userPhone, :userAge, :quizId, :quesId, :answer, now())" + "", nativeQuery = true)
 	public void insert(//
 			@Param("quizId") int quizId, //
 			@Param("quesId") int quesId, //
