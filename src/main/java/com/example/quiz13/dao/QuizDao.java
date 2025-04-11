@@ -44,8 +44,8 @@ public interface QuizDao extends JpaRepository<Quiz, Integer> {
 	
 	@Modifying
 	@Transactional
-	@Query(value = "update quiz set name = :name, " + "description = :description, " + "start_date = :startDate, "
-			+ "end_date = :endDate, " + "is_published = :published " + "where id = :quizId", nativeQuery = true)
+	@Query(value = "update quiz set quiz_name = :name, " + "description = :description, " + "start_date = :startDate, "
+			+ "end_date = :endDate, " + "is_published = :published " + "where quiz_id = :quizId", nativeQuery = true)
 	public void updateByQuizId(//
 			@Param("quizId") int quizId, //
 			@Param("name") String name, //

@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.quiz13.service.ifs.FeedbackService;
 import com.example.quiz13.vo.BasicRes;
 import com.example.quiz13.vo.FillinReq;
-import com.example.quiz13.vo.SearchReq;
 import com.example.quiz13.vo.StatisticsRes;
+import com.example.quiz13.vo.UserRes;
 
 import jakarta.validation.Valid;
 
@@ -32,6 +32,11 @@ public class FeedbackServiceController {
 	@PostMapping(value = "feedback/statistics")
 	public StatisticsRes statistics(@RequestParam(value = "quizId") int quizId) {
 		return feedbackService.statistics(quizId);
+	}
+	
+	@PostMapping(value = "feedback/user_message")
+	public UserRes selectByQuizId(@RequestParam(value = "quizId") int quizId){
+		return feedbackService.selectByQuizId(quizId);
 	}
 	
 }

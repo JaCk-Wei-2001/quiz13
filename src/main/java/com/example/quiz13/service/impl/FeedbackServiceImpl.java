@@ -24,11 +24,13 @@ import com.example.quiz13.vo.FeedbackDto;
 import com.example.quiz13.vo.FeedbackRes;
 import com.example.quiz13.vo.FeedbackVo;
 import com.example.quiz13.vo.FillinReq;
+import com.example.quiz13.vo.GetQuestionRes;
 import com.example.quiz13.vo.OptionCountVo;
 import com.example.quiz13.vo.QuesAnswerVo;
 import com.example.quiz13.vo.QuesIdAnswerVo;
 import com.example.quiz13.vo.StatisticsRes;
 import com.example.quiz13.vo.StatisticsVo;
+import com.example.quiz13.vo.UserRes;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -345,6 +347,19 @@ public class FeedbackServiceImpl implements FeedbackService {
 			}
 		}
 		return quesIdAnswersMap;
+	}
+
+	
+	
+	@Override
+	public UserRes selectByQuizId(int quizId) {
+		if (quizId <= 0) {
+			return new UserRes(ResMessage.PARAM_QUIZ_ID_ERROR.getCode(), //
+					ResMessage.PARAM_QUIZ_ID_ERROR.getMessage());
+		}
+		List<Feedback> list = feedbackDao.selectByQuizId(quizId);
+		return new UserRes(ResMessage.SUCCESS.getCode(), //
+				ResMessage.SUCCESS.getMessage(), list);
 	}
 
 }

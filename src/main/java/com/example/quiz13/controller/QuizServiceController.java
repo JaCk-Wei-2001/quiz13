@@ -17,6 +17,7 @@ import com.example.quiz13.vo.SearchReq;
 import com.example.quiz13.vo.SearchRes;
 import com.example.quiz13.vo.UpdateReq;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.validation.Valid;
 
 @CrossOrigin
@@ -52,6 +53,7 @@ public class QuizServiceController {
 		return quizService.update(req);
 	}
 	
+	@Hidden
 	@PostMapping(value = "quiz/delete")
 	public BasicRes delete(@Valid @RequestBody DeleteReq req) {
 		return quizService.delete(req);

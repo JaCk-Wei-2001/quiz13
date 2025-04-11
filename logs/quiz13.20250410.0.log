@@ -1,0 +1,322 @@
+11:15:39.540 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+11:15:39.588 INFO  [main]com.example.quiz13.Quiz13Application - Starting Quiz13Application using Java 21.0.5 with PID 29592 (C:\learnFullstack\java\java_project\quiz13\bin\main started by user in C:\learnFullstack\java\java_project\quiz13)
+11:15:39.588 INFO  [main]com.example.quiz13.Quiz13Application - No active profile set, falling back to 1 default profile: "default"
+11:15:40.621 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:15:40.675 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+11:15:41.153 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:15:41.166 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:15:41.167 INFO  [main]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:15:41.167 INFO  [main]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+11:15:41.230 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:15:41.230 INFO  [main]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1608 ms
+11:15:41.385 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:15:41.568 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@349c4d1c
+11:15:41.571 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:15:41.617 INFO  [main]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:15:41.675 INFO  [main]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+11:15:41.708 INFO  [main]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11:15:41.995 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:15:42.086 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:15:42.321 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.QuestionId
+11:15:42.321 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.QuestionId
+11:15:42.321 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.FeedbackId
+11:15:42.321 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.FeedbackId
+11:15:42.731 INFO  [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:15:42.734 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:15:42.962 INFO  [main]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11:15:43.777 WARN  [main]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:15:44.148 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:15:44.165 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:15:44.174 INFO  [main]com.example.quiz13.Quiz13Application - Started Quiz13Application in 5.022 seconds (process running for 8.031)
+11:17:28.518 INFO  [http-nio-8080-exec-2]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:17:28.518 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:17:28.519 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+11:17:29.223 INFO  [http-nio-8080-exec-9]org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 318 ms
+11:19:23.140 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+11:19:23.189 INFO  [main]com.example.quiz13.Quiz13Application - Starting Quiz13Application using Java 21.0.5 with PID 4780 (C:\learnFullstack\java\java_project\quiz13\bin\main started by user in C:\learnFullstack\java\java_project\quiz13)
+11:19:23.190 INFO  [main]com.example.quiz13.Quiz13Application - No active profile set, falling back to 1 default profile: "default"
+11:19:23.929 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:19:23.987 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+11:19:24.459 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:19:24.473 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:19:24.475 INFO  [main]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:19:24.475 INFO  [main]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+11:19:24.532 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:19:24.533 INFO  [main]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1305 ms
+11:19:24.660 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:19:24.835 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b5aa65b
+11:19:24.837 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:19:24.884 INFO  [main]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:19:24.928 INFO  [main]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+11:19:24.956 INFO  [main]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11:19:25.227 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:19:25.301 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:19:25.511 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.QuestionId
+11:19:25.511 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.QuestionId
+11:19:25.511 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.FeedbackId
+11:19:25.511 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.FeedbackId
+11:19:25.894 INFO  [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:19:25.897 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:19:26.116 INFO  [main]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11:19:26.955 WARN  [main]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:19:27.386 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:19:27.406 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:19:27.414 INFO  [main]com.example.quiz13.Quiz13Application - Started Quiz13Application in 4.685 seconds (process running for 4.995)
+11:19:30.353 INFO  [http-nio-8080-exec-2]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:19:30.353 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:19:30.354 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+11:19:30.819 INFO  [http-nio-8080-exec-4]org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 267 ms
+14:13:19.047 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+14:13:19.093 INFO  [main]com.example.quiz13.Quiz13Application - Starting Quiz13Application using Java 21.0.5 with PID 22960 (C:\learnFullstack\java\java_project\quiz13\bin\main started by user in C:\learnFullstack\java\java_project\quiz13)
+14:13:19.094 INFO  [main]com.example.quiz13.Quiz13Application - No active profile set, falling back to 1 default profile: "default"
+14:13:19.762 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:13:19.815 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+14:13:20.191 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14:13:20.204 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:13:20.205 INFO  [main]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:13:20.206 INFO  [main]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+14:13:20.257 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:13:20.257 INFO  [main]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1131 ms
+14:13:20.383 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:13:20.573 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c4cc644
+14:13:20.575 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:13:20.615 INFO  [main]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:13:20.656 INFO  [main]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+14:13:20.682 INFO  [main]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14:13:20.903 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:13:20.967 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:13:21.154 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.QuestionId
+14:13:21.154 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.QuestionId
+14:13:21.154 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.FeedbackId
+14:13:21.154 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.FeedbackId
+14:13:21.504 INFO  [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:13:21.507 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:13:21.676 INFO  [main]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14:13:22.457 WARN  [main]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:13:22.899 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:13:22.916 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+14:13:22.923 INFO  [main]com.example.quiz13.Quiz13Application - Started Quiz13Application in 4.228 seconds (process running for 4.488)
+14:14:00.009 INFO  [http-nio-8080-exec-2]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:14:00.009 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:14:00.010 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14:28:23.077 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+14:28:23.120 INFO  [main]com.example.quiz13.Quiz13Application - Starting Quiz13Application using Java 21.0.5 with PID 26692 (C:\learnFullstack\java\java_project\quiz13\bin\main started by user in C:\learnFullstack\java\java_project\quiz13)
+14:28:23.121 INFO  [main]com.example.quiz13.Quiz13Application - No active profile set, falling back to 1 default profile: "default"
+14:28:23.762 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:28:23.815 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+14:28:24.247 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14:28:24.261 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:28:24.262 INFO  [main]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:28:24.262 INFO  [main]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+14:28:24.314 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:28:24.315 INFO  [main]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1159 ms
+14:28:24.437 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:28:24.590 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31aab981
+14:28:24.594 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:28:24.633 INFO  [main]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:28:24.672 INFO  [main]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+14:28:24.698 INFO  [main]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14:28:24.910 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:28:24.972 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:28:25.159 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.QuestionId
+14:28:25.159 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.QuestionId
+14:28:25.159 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.FeedbackId
+14:28:25.159 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.FeedbackId
+14:28:25.502 INFO  [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:28:25.505 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:28:25.681 INFO  [main]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14:28:26.418 WARN  [main]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:28:26.809 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:28:26.827 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+14:28:26.835 INFO  [main]com.example.quiz13.Quiz13Application - Started Quiz13Application in 4.127 seconds (process running for 4.365)
+14:28:33.378 INFO  [http-nio-8080-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:28:33.378 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:28:33.380 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14:31:58.639 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+14:31:58.702 INFO  [main]com.example.quiz13.Quiz13Application - Starting Quiz13Application using Java 21.0.5 with PID 25156 (C:\learnFullstack\java\java_project\quiz13\bin\main started by user in C:\learnFullstack\java\java_project\quiz13)
+14:31:58.703 INFO  [main]com.example.quiz13.Quiz13Application - No active profile set, falling back to 1 default profile: "default"
+14:31:59.535 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:31:59.606 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+14:32:00.161 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14:32:00.175 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:32:00.177 INFO  [main]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:32:00.177 INFO  [main]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+14:32:00.234 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:32:00.235 INFO  [main]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1489 ms
+14:32:00.400 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:32:00.629 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4df7d9ee
+14:32:00.633 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:32:00.689 INFO  [main]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:32:00.753 INFO  [main]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+14:32:00.787 INFO  [main]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14:32:01.084 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:32:01.181 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:32:01.460 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.QuestionId
+14:32:01.460 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.QuestionId
+14:32:01.461 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.FeedbackId
+14:32:01.461 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.FeedbackId
+14:32:01.859 INFO  [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:32:01.861 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:32:02.076 INFO  [main]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14:32:02.878 WARN  [main]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:32:03.403 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:32:03.425 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+14:32:03.435 INFO  [main]com.example.quiz13.Quiz13Application - Started Quiz13Application in 5.231 seconds (process running for 5.755)
+14:32:17.629 INFO  [http-nio-8080-exec-2]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:32:17.629 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:32:17.630 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14:36:23.951 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+14:36:23.995 INFO  [main]com.example.quiz13.Quiz13Application - Starting Quiz13Application using Java 21.0.5 with PID 23384 (C:\learnFullstack\java\java_project\quiz13\bin\main started by user in C:\learnFullstack\java\java_project\quiz13)
+14:36:23.995 INFO  [main]com.example.quiz13.Quiz13Application - No active profile set, falling back to 1 default profile: "default"
+14:36:24.679 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:36:24.728 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+14:36:25.151 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14:36:25.161 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:36:25.163 INFO  [main]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:36:25.163 INFO  [main]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+14:36:25.213 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:36:25.214 INFO  [main]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1188 ms
+14:36:25.359 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:36:25.572 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b0dbfb
+14:36:25.574 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:36:25.622 INFO  [main]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:36:25.663 INFO  [main]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+14:36:25.689 INFO  [main]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14:36:25.934 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:36:26.001 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:36:26.187 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.QuestionId
+14:36:26.187 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.QuestionId
+14:36:26.187 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.FeedbackId
+14:36:26.187 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.FeedbackId
+14:36:26.521 INFO  [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:36:26.523 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:36:26.711 INFO  [main]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14:36:27.479 WARN  [main]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:36:27.908 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:36:27.925 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+14:36:27.931 INFO  [main]com.example.quiz13.Quiz13Application - Started Quiz13Application in 4.339 seconds (process running for 4.577)
+14:36:33.067 INFO  [http-nio-8080-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:36:33.067 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:36:33.068 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14:38:03.819 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+14:38:03.862 INFO  [main]com.example.quiz13.Quiz13Application - Starting Quiz13Application using Java 21.0.5 with PID 17252 (C:\learnFullstack\java\java_project\quiz13\bin\main started by user in C:\learnFullstack\java\java_project\quiz13)
+14:38:03.863 INFO  [main]com.example.quiz13.Quiz13Application - No active profile set, falling back to 1 default profile: "default"
+14:38:04.531 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:38:04.582 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+14:38:04.986 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14:38:04.999 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:38:05.001 INFO  [main]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:38:05.001 INFO  [main]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+14:38:05.046 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:38:05.046 INFO  [main]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1154 ms
+14:38:05.160 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:38:05.338 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@391515c7
+14:38:05.341 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:38:05.384 INFO  [main]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:38:05.429 INFO  [main]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+14:38:05.459 INFO  [main]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14:38:05.677 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:38:05.739 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:38:05.925 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.QuestionId
+14:38:05.925 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.QuestionId
+14:38:05.925 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.FeedbackId
+14:38:05.925 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.FeedbackId
+14:38:06.257 INFO  [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:38:06.259 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:38:06.429 INFO  [main]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14:38:07.213 WARN  [main]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:38:07.592 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:38:07.608 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+14:38:07.614 INFO  [main]com.example.quiz13.Quiz13Application - Started Quiz13Application in 4.145 seconds (process running for 4.384)
+14:38:11.787 INFO  [http-nio-8080-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:38:11.787 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:38:11.787 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+16:23:18.748 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+16:23:18.802 INFO  [main]com.example.quiz13.Quiz13Application - Starting Quiz13Application using Java 21.0.5 with PID 31112 (C:\learnFullstack\java\java_project\quiz13\bin\main started by user in C:\learnFullstack\java\java_project\quiz13)
+16:23:18.803 INFO  [main]com.example.quiz13.Quiz13Application - No active profile set, falling back to 1 default profile: "default"
+16:23:19.508 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:23:19.571 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+16:23:20.151 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16:23:20.163 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:23:20.164 INFO  [main]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:23:20.164 INFO  [main]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+16:23:20.219 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:23:20.220 INFO  [main]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1380 ms
+16:23:20.367 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:23:20.589 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78e68401
+16:23:20.592 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:23:20.645 INFO  [main]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:23:20.691 INFO  [main]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+16:23:20.717 INFO  [main]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16:23:20.990 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16:23:21.064 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+16:23:21.280 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.QuestionId
+16:23:21.280 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.QuestionId
+16:23:21.280 WARN  [main]org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.quiz13.entity.FeedbackId
+16:23:21.280 WARN  [main]org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.quiz13.entity.FeedbackId
+16:23:21.762 INFO  [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16:23:21.765 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:23:22.045 INFO  [main]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+16:23:22.796 WARN  [main]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:23:23.220 INFO  [main]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:23:23.240 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+16:23:23.248 INFO  [main]com.example.quiz13.Quiz13Application - Started Quiz13Application in 4.902 seconds (process running for 5.206)
+16:23:53.723 INFO  [http-nio-8080-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:23:53.725 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:23:53.727 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
